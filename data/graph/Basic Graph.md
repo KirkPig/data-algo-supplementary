@@ -50,20 +50,17 @@
 ## คำศัพท์น่ารู้เกี่ยวกับกราฟ
 คำศัพท์พวกนี้จะเจอบ่อย ซึ่งแต่ละที่อาจนิยามต่างกันเล็กน้อย แต่ปกติ
  
-1. **Path** หมายถึงเส้นทางเดินจากจุดนึงไปตามเส้นเชื่อมไปอีกจุดในกราฟ เช่น  
-![path](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example2.png)
-
+1. **Path** หมายถึงเส้นทางเดินจากจุดนึงไปตามเส้นเชื่อมไปอีกจุดในกราฟ เช่น 
+<br>[path](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example2.png) <br>
 จากกราฟด้านบน path A-B-C หมายถึง path ที่เริ่มจาก A เดินไป B แล้วก็จาก B ไป C ตามเส้นเชื่อม แต่ว่าไม่มี path A-B-E เพราะว่า ระหว่าง B กับ E ไม่มีเส้นเชื่อม หรือว่า A-B-D-C ก็ไม่ได้เช่นเดียวกัน เพราะว่า edge $(C, D)$ มีทิศทางจาก $C$ ไป $D$ (ถ้าอยากให้ทำได้ ต้องเพิ่ม $(D, C)$ เข้ามาด้วย
-	**ตัวอย่าง Path อื่น ๆ ที่ทำได้**
-	1. A-B-D-E
-	2. A-B-C-A-B
+	**ตัวอย่าง Path อื่น ๆ ที่ทำได้**<br>
+	1. A-B-D-E<br>
+	2. A-B-C-A-B<br>
 2. **Cycle** หมายถึง path ที่จุดเริ่มกับจบเป็นจุดเดียวกัน เช่นจากกราฟข้างบน path A-B-C เป็น Cycle
 3. **Connected graph** หมายถึงกราฟที่ ถ้าสมมติว่าเส้นเชื่อมไม่มีทิศทาง สำหรับคู่จุดใด ๆ จะมี path ไปหากันเสมอ เช่น 
-![connected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example3.png)
-
+<br> ![connected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example3.png)<br>
 เป็น Connected graph เพราะว่า ถ้าสมมติว่ามันไม่มีทิศทาง (B ไป A ได้ หรือ C ไป A ได้) ทุก ๆ คู่จะมี path ไปหากันเสมอ ส่วน 
-![disconnected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example1.png)
-
+<br>![disconnected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example1.png)<br>
 ไม่เป็น Connected graph เพราะว่า A ไปหา D หรือ E ไม่ได้
 4. **Tree** หมายถึง Connected graph ที่ไม่มี cycle
 5. **Subgraph** หมายถึง Subset ของกราฟที่ สำหรับจุด A กับ B ใด ๆ ถ้าจุด A กับ B อยู่ใน Subgraph นี้แล้ว edge $(A, B)$ ต้องอยู่ใน Subgraph นี้ด้วย
