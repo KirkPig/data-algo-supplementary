@@ -31,21 +31,21 @@
 
 **ภาพแต่ละแบบ**
 
-	1. Unweighted undirected graph 
+1. Unweighted undirected graph 
 
-	![Unweighted undirected](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/unweighted_undirected.png)
+![Unweighted undirected](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/unweighted_undirected.png)
 
-	2. Unweighted directed graph 
+2. Unweighted directed graph 
 
-	![Unweighted directed](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/unweighted_directed.png)
+![Unweighted directed](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/unweighted_directed.png)
 
-	3. Weighted undirected graph 
+3. Weighted undirected graph 
 
-	![Weighted undirected](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/weighted_undirected.png)
+![Weighted undirected](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/weighted_undirected.png)
 
-	4. Weighted directed graph  
-	
-	![Weighted directed](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/weighted_directed.png)
+4. Weighted directed graph  
+
+![Weighted directed](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/weighted_directed.png)
 
 ## คำศัพท์น่ารู้เกี่ยวกับกราฟ
 คำศัพท์พวกนี้จะเจอบ่อย ซึ่งแต่ละที่อาจนิยามต่างกันเล็กน้อย แต่ปกติ
