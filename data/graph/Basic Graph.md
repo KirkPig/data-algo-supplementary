@@ -30,13 +30,21 @@
 เราสามารถเอา 2 อย่างนี้มาผสมกันได้ด้วย เช่น weighted undirected graph หมายถึงกราฟไม่มีทิศทางที่มีน้ำหนักด้วย เช่นแผนที่ที่ถนนทุกเส้นวิ่งได้ทั้ง 2 ทิศเป็นต้น
 
 **ภาพแต่ละแบบ**
+
 	1. Unweighted undirected graph 
+
 	![Unweighted undirected](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/unweighted_undirected.png)
+
 	2. Unweighted directed graph 
+
 	![Unweighted directed](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/unweighted_directed.png)
+
 	3. Weighted undirected graph 
+
 	![Weighted undirected](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/weighted_undirected.png)
+
 	4. Weighted directed graph  
+	
 	![Weighted directed](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/weighted_directed.png)
 
 ## คำศัพท์น่ารู้เกี่ยวกับกราฟ
@@ -44,6 +52,7 @@
  
 1. **Path** หมายถึงเส้นทางเดินจากจุดนึงไปตามเส้นเชื่อมไปอีกจุดในกราฟ เช่น  
 ![path](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example2.png)
+
 จากกราฟด้านบน path A-B-C หมายถึง path ที่เริ่มจาก A เดินไป B แล้วก็จาก B ไป C ตามเส้นเชื่อม แต่ว่าไม่มี path A-B-E เพราะว่า ระหว่าง B กับ E ไม่มีเส้นเชื่อม หรือว่า A-B-D-C ก็ไม่ได้เช่นเดียวกัน เพราะว่า edge $(C, D)$ มีทิศทางจาก $C$ ไป $D$ (ถ้าอยากให้ทำได้ ต้องเพิ่ม $(D, C)$ เข้ามาด้วย
 	**ตัวอย่าง Path อื่น ๆ ที่ทำได้**
 	1. A-B-D-E
@@ -51,8 +60,10 @@
 2. **Cycle** หมายถึง path ที่จุดเริ่มกับจบเป็นจุดเดียวกัน เช่นจากกราฟข้างบน path A-B-C เป็น Cycle
 3. **Connected graph** หมายถึงกราฟที่ ถ้าสมมติว่าเส้นเชื่อมไม่มีทิศทาง สำหรับคู่จุดใด ๆ จะมี path ไปหากันเสมอ เช่น 
 ![connected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example3.png)
+
 เป็น Connected graph เพราะว่า ถ้าสมมติว่ามันไม่มีทิศทาง (B ไป A ได้ หรือ C ไป A ได้) ทุก ๆ คู่จะมี path ไปหากันเสมอ ส่วน 
-![disconnected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example1.png) 
+![disconnected graph](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/graph/example1.png)
+
 ไม่เป็น Connected graph เพราะว่า A ไปหา D หรือ E ไม่ได้
 4. **Tree** หมายถึง Connected graph ที่ไม่มี cycle
 5. **Subgraph** หมายถึง Subset ของกราฟที่ สำหรับจุด A กับ B ใด ๆ ถ้าจุด A กับ B อยู่ใน Subgraph นี้แล้ว edge $(A, B)$ ต้องอยู่ใน Subgraph นี้ด้วย
