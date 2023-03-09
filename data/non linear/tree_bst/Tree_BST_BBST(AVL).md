@@ -32,7 +32,7 @@ base case ของ in-order และ post-order จะเป็นตอนท
 เป็น Binary Search Tree ที่ไม่ว่าจะมีการ insert vertex ใหม่ยังไง จะมี algorithm จัดการให้ความสูงเป็น $O(log(N))$ เมื่อ $N$ หมายถึงจำนวน vertex เสมอ 
 
 ## AVL Tree 
-เป็น Balanced Binary Search Tree แบบนึง ที่มีวิธีจัดการเวลา insert ทำให้ผลต่างความสูงของ subtree ซ้ายกับขวา จากทุก parent มีค่าไม่เกิน 1 ซึ่งตัวอัลกอริทึมสามารถดูเพิ่มเติมได้[ที่นี่](https://www.tutorialspoint.com/data_structures_algorithms/avl_tree_algorithm.htm) (ถ้าว่าง ๆ จะมาเพิ่มทีหลัง)
+เป็น Balanced Binary Search Tree แบบนึง ที่มีวิธีจัดการเวลา insert ทำให้ผลต่างความสูงของ subtree ซ้ายกับขวา จากทุก parent มีค่าไม่เกิน 1 ซึ่งตัวอัลกอริทึมสามารถดูเพิ่มเติมได้[ที่นี่](https://www.cs.cmu.edu/~15122/slides/review/16-avl.pdf) (ถ้าว่าง ๆ จะมาเพิ่มทีหลัง)
 ## STL
 ปกติแล้ว ในระดับสอวน.เราไม่ต้องเขียน Balanced Binary Search Tree แต่เราจะใช้ std::set กับ std::map มาแทน
 ### std::set
