@@ -52,7 +52,7 @@
 
 0. **Degree(ของ v)** หมายถึง จำนวน edge ที่มี vertex v เป็นจุดปลาย สำหรับ directed graph จะมี in-degree หมายถึง จำนวน edge ที่เข้าหา v กับ out-degree หมายถึงจำนวน edge ที่ออกจาก v
 1. **Path** หมายถึงเส้นทางเดินจากจุดนึงไปตามเส้นเชื่อมไปอีกจุดในกราฟ เช่น 
-<br>[path](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/non%20linear/graph/example2.png) <br>
+<br>![path](https://raw.githubusercontent.com/KirkPig/data-algo-supplementary/main/data/non%20linear/graph/example2.png) <br>
 จากกราฟด้านบน path A-B-C หมายถึง path ที่เริ่มจาก A เดินไป B แล้วก็จาก B ไป C ตามเส้นเชื่อม แต่ว่าไม่มี path A-B-E เพราะว่า ระหว่าง B กับ E ไม่มีเส้นเชื่อม หรือว่า A-B-D-C ก็ไม่ได้เช่นเดียวกัน เพราะว่า edge $(C, D)$ มีทิศทางจาก $C$ ไป $D$ (ถ้าอยากให้ทำได้ ต้องเพิ่ม $(D, C)$ เข้ามาด้วย<br>
 	**ตัวอย่าง Path อื่น ๆ ที่ทำได้**<br>
 	1. A-B-D-E<br>
